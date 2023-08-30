@@ -1,0 +1,39 @@
+.custom-button {
+	margin-top: 1rem;
+	padding: 1rem 2rem;
+	border: 1px solid rgb(74, 74, 74);
+	background: none;
+	cursor: pointer;
+
+	&:hover {
+		background: rgba(74, 74, 74, 0.3);
+	}
+}
+
+.custom-header {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.custom-input-container {
+	margin-bottom: 0.5rem;
+	position: relative;
+	width: 100%;
+}
+
+.custom-input-remove {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	transform: translateY(-50%);
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.custom-input-label {
+	margin-top: 1rem;
+	padding-bottom: 0.5rem;
+}
