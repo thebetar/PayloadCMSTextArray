@@ -25,16 +25,16 @@ const TextArray: React.FC<{ label: string; name: string; path: string }> = ({ la
 	};
 
 	return (
-		<div className="field-type text">
-			<div className="custom-header">{label}</div>
+		<div className="payload-cms-text-array-field-type-text">
+			<div className="payload-cms-text-array-field-header">{label}</div>
 			{value?.map((item, index) => (
 				<div>
-					<div className="custom-input-label">
+					<div className="payload-cms-text-array-field-input-label">
 						{label} {index + 1}
 					</div>
-					<div className="custom-input-container">
+					<div className="payload-cms-text-array-field-input-container">
 						<input name={name} value={value[index]} onChange={e => updateValue(e.target.value, index)} />
-						<div className="custom-input-remove" onClick={() => removeItem(index)}>
+						<div className="payload-cms-text-array-field-input-remove" onClick={() => removeItem(index)}>
 							<svg
 								width="25"
 								height="25"
@@ -49,7 +49,7 @@ const TextArray: React.FC<{ label: string; name: string; path: string }> = ({ la
 					</div>
 				</div>
 			))}
-			<button className="custom-button" type="button" onClick={addItem}>
+			<button className="payload-cms-text-array-field-button" type="button" onClick={addItem}>
 				Add {label}
 			</button>
 		</div>

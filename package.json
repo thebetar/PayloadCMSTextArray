@@ -1,6 +1,13 @@
 {
-  "dependencies": {
-    "payload": "^1.15.2",
-    "react": "^18.2.0"
-  }
+	"name": "payload-cms-text-array",
+	"version": "0.0.1",
+	"main": "./src/index.ts",
+	"author": {
+		"name": "Lars Vonk",
+		"email": "info@vonkprogramming.nl"
+	},
+	"dependencies": {
+		"payload": "^1.15.2",
+		"react": "^18.2.0"
+	}
 }
