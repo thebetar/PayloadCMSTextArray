@@ -1,8 +1,32 @@
 # PayloadCMSTextArray
 
-I did not find a field that supports an array of strings in the documentation of Payload CMS so I made it myself.
+While working with payload CMS I did not find a field that could handle an array of strings.
+This was the inspiration to create this field myself and publish it so others could use it as well.
 
-To use this field import `TextArray` and pass it to a field of type `json`. It will then show a list of text input fields with an add button.
+This package is a W.I.P.
+
+To use this package import it and use it in a field like this:
+
+```js
+import { TextArrayField, TextArrayCell } from 'payload-cms-text-array';
+
+const Users: CollectionConfig = {
+    slug: 'users',
+    fields: [
+        ...,
+        {
+            name: 'skills',
+            type: 'text',
+            admin: {
+				components: {
+					Field: TextArrayField,
+					Cell: TextArrayCell
+				}
+			},
+        }
+    ]
+}
+```
 
 ## Info
 
